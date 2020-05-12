@@ -25,10 +25,7 @@ from .supplemental import read, nucleotide_linkage, sort_members_by_importance
 from . import config
 
 # External modules
-try: # for openbabel < 3.0.0
-    import pybel
-except ImportError: # for openbabel >= 3.0.0
-    from openbabel import pybel
+import pybel
 
 
 ################
@@ -112,8 +109,8 @@ class PDBParser:
             if line.startswith("TER"):
                 previous_ter = True
             # Get modified residues
-            if line.startswith("MODRES"):
-                modres.add(line[12:15].strip())
+#            if line.startswith("MODRES"):
+#                modres.add(line[12:15].strip())
             # Get covalent linkages between ligands
             if line.startswith("LINK"):
                 covalent.append(self.get_linkage(line))
