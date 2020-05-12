@@ -10,7 +10,6 @@
 Modified to aid in detecting and characterizing lectin binding sites.
 * Removed restriction of "MODRES" residues to include modified glycan ligands in analysis
 * Took potential glycans off the "blacklist" of restricted ligands that might be considered artifacts and excluded
-* 
 
 ## How to use PLIP
 
