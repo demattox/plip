@@ -6,6 +6,12 @@
 
  <img src="pliplogo.png"  alt="PLIP Logo" height="100">
 
+## Adaptations in this fork
+Modified to aid in detecting and characterizing lectin binding sites.
+* Removed restriction of "MODRES" residues to include modified glycan ligands in analysis
+* Took potential glycans off the "blacklist" of restricted ligands that might be considered artifacts and excluded
+* 
+
 ## How to use PLIP
 
 This README provides instructions for setup and using basic functions of PLIP.
